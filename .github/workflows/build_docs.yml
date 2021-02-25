@@ -21,8 +21,8 @@ jobs:
            mdbook-version: 'latest'
 
       - run: |
-          mdbook build zh -d ./book/zh
-          cp index.html ./book
+          mdbook build zh -d ../book/zh
+          cp index.html book/index.html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
