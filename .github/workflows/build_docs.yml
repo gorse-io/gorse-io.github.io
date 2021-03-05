@@ -22,7 +22,9 @@ jobs:
 
       - run: |
           mdbook build zh -d ../book/zh/docs
+          mdbook build en -d ../book/en/docs
           cp zh/index.html book/zh/index.html
+          cp en/index.html book/en/index.html
           cp index.html book/index.html
           cp CNAME book/CNAME
 
