@@ -6,8 +6,8 @@ The database configuration is located under `[database]`.
 
 | Key | Type | Description | Default |
 |-|-|-|-|
-| `data_store` | string | Database for data (supports MySQL/MongoDB) | redis://127.0.0.1:6379 |
-| `cache_store` | string | Database for cache (supports Redis) | mysql://root@tcp(127.0.0.1:3306)/gorse |
+| `cache_store` | string | Database for data (supports MySQL/MongoDB) | redis://127.0.0.1:6379 |
+| `data_store` | string | Database for cache (supports Redis) | mysql://root@tcp(127.0.0.1:3306)/gorse |
 | `auto_insert_user` | bool | Automatically insert new users when inserting new feedback | true |
 | `auto_insert_item` | bool | Automatically insert new items when inserting new feedback | true |
 

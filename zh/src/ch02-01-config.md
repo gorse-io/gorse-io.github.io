@@ -6,8 +6,8 @@
 
 | 配置项 | 类型 | 说明 | 默认值 |
 |-|-|-|-|
-| `data_store` | string | 数据存储数据库（支持MySQL/MongoDB） | redis://127.0.0.1:6379 |
-| `cache_store` | string | 缓存存储数据库（支持Redis） | mysql://root@tcp(127.0.0.1:3306)/gorse |
+| `cache_store` | string | 数据存储数据库（支持MySQL/MongoDB） | redis://127.0.0.1:6379 |
+| `data_store` | string | 缓存存储数据库（支持Redis） | mysql://root@tcp(127.0.0.1:3306)/gorse |
 | `auto_insert_user` | bool | 在插入新反馈的时候自动插入新用户 | true |
 | `auto_insert_item` | bool | 在插入新反馈的时候自动插入新物品 | true |
 
