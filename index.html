@@ -1,20 +1,202 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link href='https://fonts.loli.net/icon?family=Material+Icons' rel='stylesheet'>
+    <link href="https://cdn.bootcss.com/font-awesome/5.8.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#1E88E5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -56px;
+            visibility: hidden;
+        }
+    </style>
     <title>Gorse - Open Source Recommender System</title>
 </head>
+
 <body>
-<script> 
-!function () {
-var lang = navigator.language||navigator.userLanguage;
-lang = lang.substr(0, 2);
-if(lang == 'zh'){
-window.location.replace('//gorse.io/zh')
-}else{
-window.location.replace('//gorse.io/en')
-}
-}()
-</script>
+    <div class="navbar-fixed">
+        <nav class="blue darken-1">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">
+                    <span style="font-weight:300;font-size:2.4rem;">GORSE</span>
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="sidenav" id="mobile-demo">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </div>
+    <a class="anchor" id="introduction"></a>
+    <section class="section blue lighten-5">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 center">
+                    <div class="row">
+                        <div class="col s12">
+                            <img width="180" style="padding-top: 30px" src="https://gorse.io/zh/docs/img/gorse.png">
+                        </div>
+                        <div class="col s12 center" style="padding-top: 30px">
+                            <a href="https://github.com/zhenghaoz/gorse" target="_blank">
+                                <img src="https://img.shields.io/github/stars/zhenghaoz/gorse.svg?style=social">
+                            </a>
+                            <a href="https://github.com/zhenghaoz/gorse" target="_blank">
+                                <img src="https://img.shields.io/github/forks/zhenghaoz/gorse.svg?style=social">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m8">
+                    <h4 class="blue-text">Introduction</h4>
+                    <p class="grey-text text-darken-1 start-paragraph-text"><em>Gorse</em> is an open source
+                        recommendation system written in Go.
+                    </p>
+                    <p class="grey-text text-darken-1 start-paragraph-text">
+                        Gorse is an open source recommendation system written in Go. Gorse aims to be an universal open
+                        source recommender system that can be easily introduced into a wide variety of online services.
+                        By importing items, users and interaction data into Gorse, the system will automatically train
+                        models to generate recommendations for each user. Project features are as follows.
+                    </p>
+                    <ul class="grey-text text-darken-1 start-paragraph-text">
+                        <li style="list-style-type: disc; margin-left: 24px;"><strong>AutoML</strong>: Choose the best
+                            recommendation model and stargety automatically by model searching in the background.</li>
+                        <li style="list-style-type: disc; margin-left: 24px;"><strong>Distributed
+                                Recommendation</strong>: Single node training, distributed prediction, and ability to
+                            achieve horizontal scaling in the recommendation stage.</li>
+                        <li style="list-style-type: disc; margin-left: 24px;"><strong>RESTful API</strong>: Provide
+                            RESTful APIs for data CRUD and recommendation requests.</li>
+                        <li style="list-style-type: disc; margin-left: 24px;"><strong>Dashboard</strong>: Provide
+                            dashboard for data import and export, monitoring, and cluster status checking.</li>
+                    </ul>
+                    <div class="row">
+                        <div class="col s4 m3 center">
+                            <h4><a href="https://github.com/zhenghaoz/gorse" target="_blank"><i
+                                        class="fab fa-github blue-text" style="font-size: 3.2rem"></i></a></h4>
+                            <p class="grey-text text-darken-1 start-paragraph-text">Source</p>
+                        </div>
+                        <div class="col s4 m3 center">
+                            <h4><a href="https://docs.gorse.io/" target="_blank"><i class="fas fa-book blue-text"
+                                        style="font-size: 3.2rem"></i></a></h4>
+                            <p class="grey-text text-darken-1 start-paragraph-text">Documents</p>
+                        </div>
+                        <div class="col s4 m3 center">
+                            <h4><a href="https://www.helloworld.net/special/d/NLpFAYCrwFYk" target="_blank"><i
+                                        class="fas fa-blog blue-text" style="font-size: 3.2rem"></i></a></h4>
+                            <p class="grey-text text-darken-1 start-paragraph-text">Blog</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a class="anchor" id="demo"></a>
+    <section class="section blue lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 center">
+                    <div class="row">
+                        <div class="col s12">
+                            <i class="fa fa-spinner fa-4x" aria-hidden="true"
+                                style="color:white; padding-top: 30px"></i>
+                            <!-- <img width="180" style="padding-top: 30px" src="https://img.sine-x.com/steam-lens.png"> -->
+                        </div>
+                        <!-- <div class="col s12 center" style="padding-top: 30px">
+                        <a href="https://github.com/zhenghaoz/SteamLens" target="_blank">
+                            <img src="https://img.shields.io/github/stars/zhenghaoz/SteamLens.svg?style=social">
+                        </a>
+                        <a href="https://github.com/zhenghaoz/SteamLens" target="_blank">
+                            <img src="https://img.shields.io/github/forks/zhenghaoz/SteamLens.svg?style=social">
+                        </a>
+                    </div> -->
+                    </div>
+                </div>
+                <div class="col s12 m8">
+                    <h4 class="white-text">Demo</h4>
+                    <p class="white-text text-darken-1">[TBD]</p>
+                    <!-- <p class="white-text text-darken-1"><em>SteamLens</em> is a steam video game recommender system built to
+                    test the
+                    usability of the <em>gorse</em> recommender system engine. It's able to:</p>
+                <ul class="white-text">
+                    <li style="list-style-type: disc; margin-left: 24px;">recommend random games</li>
+                    <li style="list-style-type: disc; margin-left: 24px;">recommend popular games</li>
+                    <li style="list-style-type: disc; margin-left: 24px;">recommend similar games</li>
+                    <li style="list-style-type: disc; margin-left: 24px;">recommend games based on collaborative
+                        filtering
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col s4 m3 center">
+                        <h4><a href="https://github.com/zhenghaoz/SteamLens" target="_blank"><i
+                                        class="fab fa-github white-text" style="font-size: 3.2rem"></i></a></h4>
+                        <p class="white-text start-paragraph-text">开源代码</p>
+                    </div>
+                    <div class="col s4 m3 center">
+                        <h4><a href="https://steamlens.gorse.io" target="_blank"><i class="material-icons white-text"
+                                                                                    style="font-size: 3.2rem">link</i></a>
+                        </h4>
+                        <p class="white-text start-paragraph-text">网站</p>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <a class="anchor" id="feedback"></a>
+    <section class="section blue lighten-5">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h4 class="blue-text">Feedback</h4>
+                    <p class="grey-text text-darken-1">Any kind of feedback is expected: report a bug, give an advice or
+                        request for help.</p>
+                </div>
+                <div class="col s4 m2 center">
+                    <h4><a href="https://github.com/zhenghaoz/gorse/issues" target="_blank"><i
+                                class="material-icons blue-text" style="font-size: 3.2rem">error_outline</i></a>
+                    </h4>
+                    </h4>
+                    <p class="grey-text text-darken-1 start-paragraph-text">via Issue</p>
+                </div>
+                <div class="col s4 m2 center">
+                    <h4><a href="mailto:support@gorse.io" target="_blank"><i class="material-icons blue-text"
+                                style="font-size: 3.2rem">email</i></a>
+                    </h4>
+                    <p class="grey-text text-darken-1 start-paragraph-text">via Email</p>
+                </div>
+                <div class="col s4 m2 center">
+                    <h4><a href="https://t.me/gorsers" target="_blank"><i class="fab fa-telegram blue-text"
+                                style="font-size: 3.2rem"></i></a></h4>
+                    <p class="grey-text text-darken-1 start-paragraph-text">via Telegram</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer blue lighten-5">
+        <div class="footer-copyright blue">
+            <div class="container">
+                © 2021 zhenghaoz
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
 </body>
+
 </html>
